@@ -2,14 +2,13 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: SUSTech, Shenzhen, China
 
 profile:
   align: right
   image: g&gary.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Currently based in Shenzhen, China.</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -51,4 +50,4 @@ During my PhD studies, I actively engaged in examining and solving fairness-rela
 - **Human–AI Collaboration:** Experts' utility gains from AI assistance are sensitive to individual factors such as cognitive capacity, resulting in unequal benefits among heterogeneous experts.
 
 
-I expect to graduate in July 2025 and am currently seeking postdoctoral positions to continue my research. You can find my CV [here]({{site.url}}/assets/pdf/cv.pdf).
+I expect to graduate in July 2025 and am currently seeking postdoctoral positions to continue my research. You can find my CV [here]({{site.url}}/assets/pdf/Jiashi_GAO_CV.pdf).
