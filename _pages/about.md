@@ -51,7 +51,7 @@ During my PhD studies, I actively engaged in examining and solving fairness-rela
 
 
 I expect to graduate in July 2025 and am currently seeking postdoctoral positions to continue my research. You can find my CV [here]({{site.url}}/assets/pdf/Jiashi_GAO_CV.pdf).
-
+<hr class="divider" />
 <!-- PDF Viewer Section -->
 <div id="pdf-viewer-container">
     <button id="prev" onclick="goToPreviousPage()">Prev</button>
@@ -109,11 +109,36 @@ I expect to graduate in July 2025 and am currently seeking postdoctoral position
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    max-width: 800px; /* Match the width of the content above */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   #pdf-canvas {
     border: 1px solid #ccc;
   }
   button {
-    margin: 0 10px;
+      background: linear-gradient(145deg, #6c7ae0, #4b58c9);  /* Gradient background */
+      border: none;                                      /* Remove border */
+      color: white;                                      /* White text for contrast */
+      padding: 12px 24px;                                /* Larger padding for better click area */
+      font-size: 16px;                                   /* Slightly larger font for visibility */
+      font-weight: bold;                                 /* Bold text for emphasis */
+      border-radius: 25px;                               /* Rounded corners */
+      cursor: pointer;                                  /* Pointer cursor on hover */
+      transition: all 0.3s ease;                         /* Smooth transition for hover effects */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);          /* Subtle shadow for depth */
+      margin: 0 10px;
+  }
+  
+  button:hover {
+      background: linear-gradient(145deg, #4b58c9, #6c7ae0);  /* Inverted gradient on hover */
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);              /* Darker shadow on hover */
+      transform: translateY(-2px);                           /* Slight lift effect on hover */
+  }
+  
+  button:focus {
+      outline: none;                                        /* Remove focus outline */
+      box-shadow: 0 0 5px rgba(110, 128, 255, 0.5);           /* Soft focus glow */
   }
 </style>
