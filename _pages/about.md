@@ -51,3 +51,69 @@ During my PhD studies, I actively engaged in examining and solving fairness-rela
 
 
 I expect to graduate in July 2025 and am currently seeking postdoctoral positions to continue my research. You can find my CV [here]({{site.url}}/assets/pdf/Jiashi_GAO_CV.pdf).
+
+<!-- PDF Viewer Section -->
+<div id="pdf-viewer-container">
+    <button id="prev" onclick="goToPreviousPage()">Prev</button>
+    <canvas id="pdf-canvas"></canvas>
+    <button id="next" onclick="goToNextPage()">Next</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+<script>
+  const url = '{{site.url}}/assets/pdf/Jiashi_GAO_work.pdf';  // Replace with your PDF file's URL
+  let currentPage = 1;
+  let pdfDoc = null;
+
+  const canvas = document.getElementById('pdf-canvas');
+  const ctx = canvas.getContext('2d');
+
+  // Load PDF
+  function renderPage(pageNum) {
+    pdfDoc.getPage(pageNum).then(function(page) {
+      const viewport = page.getViewport({ scale: 1 });
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      page.render({ canvasContext: ctx, viewport: viewport });
+    });
+  }
+
+  function loadPDF() {
+    pdfjsLib.getDocument(url).promise.then(function(pdf) {
+      pdfDoc = pdf;
+      renderPage(currentPage);
+    });
+  }
+
+  function goToNextPage() {
+    if (currentPage < pdfDoc.numPages) {
+      currentPage++;
+      renderPage(currentPage);
+    }
+  }
+
+  function goToPreviousPage() {
+    if (currentPage > 1) {
+      currentPage--;
+      renderPage(currentPage);
+    }
+  }
+
+  loadPDF();
+</script>
+
+<style>
+  #pdf-viewer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  #pdf-canvas {
+    border: 1px solid #ccc;
+  }
+  button {
+    margin: 0 10px;
+  }
+</style>
