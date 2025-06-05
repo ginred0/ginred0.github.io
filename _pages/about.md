@@ -54,9 +54,9 @@ I expect to graduate in July 2025 and am currently seeking postdoctoral position
 <hr class="divider" />
 <!-- PDF Viewer Section -->
 <div id="pdf-viewer-container">
-    <button id="prev" onclick="goToPreviousPage()">Prev</button>
+    <button class="pdf-nav-btn" id="prev" onclick="goToPreviousPage()">Prev</button>
     <canvas id="pdf-canvas"></canvas>
-    <button id="next" onclick="goToNextPage()">Next</button>
+    <button class="pdf-nav-btn" id="next" onclick="goToNextPage()">Next</button>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
@@ -109,7 +109,7 @@ I expect to graduate in July 2025 and am currently seeking postdoctoral position
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    max-width: 800px; /* Match the width of the content above */
+    max-width: 600px; /* Match the width of the content above */
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -117,28 +117,27 @@ I expect to graduate in July 2025 and am currently seeking postdoctoral position
   #pdf-canvas {
     border: 1px solid #ccc;
   }
-  button {
-      background: linear-gradient(145deg, #6c7ae0, #4b58c9);  /* Gradient background */
-      border: none;                                      /* Remove border */
-      color: white;                                      /* White text for contrast */
-      padding: 12px 24px;                                /* Larger padding for better click area */
-      font-size: 16px;                                   /* Slightly larger font for visibility */
-      font-weight: bold;                                 /* Bold text for emphasis */
-      border-radius: 25px;                               /* Rounded corners */
-      cursor: pointer;                                  /* Pointer cursor on hover */
-      transition: all 0.3s ease;                         /* Smooth transition for hover effects */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);          /* Subtle shadow for depth */
-      margin: 0 10px;
+  /* Styling for the Prev and Next buttons */
+  .pdf-nav-btn {
+      background-color: rgba(155, 41, 184, 0.8);  /* Magenta color with 80% opacity */
+      color: white;                               /* White text */
+      padding: 12px 24px;                         /* Padding for the buttons */
+      font-size: 16px;                            /* Larger font size */
+      font-weight: bold;                          /* Bold text */
+      border-radius: 25px;                        /* Rounded corners */
+      border: none;                               /* Remove border */
+      cursor: pointer;                           /* Pointer cursor on hover */
+      transition: all 0.3s ease;                  /* Smooth transition for hover effect */
+      margin: 0 10px;                             /* Spacing between the buttons */
   }
   
-  button:hover {
-      background: linear-gradient(145deg, #4b58c9, #6c7ae0);  /* Inverted gradient on hover */
-      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);              /* Darker shadow on hover */
-      transform: translateY(-2px);                           /* Slight lift effect on hover */
+  .pdf-nav-btn:hover {
+      background-color: rgba(155, 41, 184, 1);    /* Magenta color without transparency on hover */
+      transform: scale(1.05);                      /* Slightly increases the size on hover */
   }
   
-  button:focus {
-      outline: none;                                        /* Remove focus outline */
-      box-shadow: 0 0 5px rgba(110, 128, 255, 0.5);           /* Soft focus glow */
+  .pdf-nav-btn:focus {
+      outline: none;                               /* Removes the default focus outline */
+      box-shadow: 0 0 5px rgba(155, 41, 184, 0.5);  /* Soft magenta glow when focused */
   }
 </style>
