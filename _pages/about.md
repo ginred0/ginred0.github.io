@@ -110,7 +110,7 @@ I expect to graduate in July 2025 and am currently seeking postdoctoral position
     justify-content: center;
     margin-top: 20px;
     max-width: 600px; /* Match the width of the content above */
-    width: 100%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
