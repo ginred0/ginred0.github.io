@@ -61,7 +61,7 @@ I expect to graduate in July 2025 and am currently seeking postdoctoral position
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
 <script>
-  const url = '{{site.url}}/assets/pdf/Jiashi_GAO_work.pdf';  // Replace with your PDF file's URL
+  const url = '{{site.url}}/assets/pdf/rs.pdf';  // Replace with your PDF file's URL
   let currentPage = 1;
   let pdfDoc = null;
 
