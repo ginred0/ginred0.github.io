@@ -28,7 +28,7 @@ I am a PhD candidate in the Department of Computer Science and Engineering at <a
 
 <hr class="divider" />
 
-My research interests lie at the intersection of computer science, economics, and sociology, focusing on fairness in AI- and human-involved systems—including data markets, federated learning, and human–AI collaboration. I investigate fairness-related issues arising from human factors such as heterogeneous data resources, behaviors, cognitive capacities, and demographic characteristics. My academic goal is to empower AI systems to be trustworthy, efficient, and fair in practice. Please refer to my research statement details in the PDF available at ({{site.url}}/assets/pdf/Jiashi_GAO_Research_statement.pdf).
+My research interests lie at the intersection of computer science, economics, and sociology, focusing on fairness in AI- and human-involved systems—including data markets, federated learning, and human–AI collaboration. I investigate fairness-related issues arising from human factors such as heterogeneous data resources, behaviors, cognitive capacities, and demographic characteristics. My academic goal is to empower AI systems to be trustworthy, efficient, and fair in practice. Please refer to my research statement details [here]({{site.url}}/assets/pdf/Jiashi_GAO_Research_statement.pdf). 
 
 <hr class="divider" />
 I expect to graduate in July 2025 and am currently seeking postdoctoral positions to continue my research. You can find my CV [here]({{site.url}}/assets/pdf/Jiashi_GAO_CV.pdf).
