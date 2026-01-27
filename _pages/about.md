@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently a postdoc in the Department of Computer Science at Hong Kong Baptist University in Hong Kong, under the supervision of Prof. Li Chen. Prior to this (2021-2025), I obtained my Ph.D. from the Department of Computational Science and Engineering at Southern University of Science and Technology, where I was supervised by Prof. Xuetao Wei. Before beginning my doctoral studies, I worked as a Research Assistant (2020-2021) under the supervision of Professor James Jianqiao Yu. All my mentors have provided invaluable guidance and support throughout my academic journey.
+I am currently a postdoc in the Department of Computer Science at Hong Kong Baptist University in Hong Kong, under the supervision of Prof. Li Chen. Prior to this (2021-2025), I obtained my Ph.D. from the Department of Computational Science and Engineering at Southern University of Science and Technology, where I was supervised by Prof. Xuetao Wei. Before beginning my doctoral studies, I worked as a Research Assistant (2020-2021) under the supervision of Prof. James Jianqiao Yu. All my mentors have provided invaluable guidance and support throughout my academic journey.
 
 <hr class="divider" />
 
