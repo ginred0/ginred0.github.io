@@ -24,67 +24,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD candidate in the Department of Computer Science and Engineering at <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology</a> in Shenzhen, China, under the supervision of Associate Professor <a href="https://cse.sustech.edu.cn/faculty/~weixt/">Xuetao Wei</a>. Before my PhD, I worked as a research assistant,  under the supervision of Professor <a href="https://jqyu.me/en/index.html">James Jianqiao Yu</a>. Both mentors have provided invaluable guidance and support throughout my academic journey.
+I am currently a postdoc in the Department of Computer Science at Hong Kong Baptist University in Hong Kong, under the supervision of Prof. Li Chen. Prior to this (2021-2025), I obtained my Ph.D. from the Department of Computational Science and Engineering at Southern University of Science and Technology, where I was supervised by Prof. Xuetao Wei. Before beginning my doctoral studies, I worked as a Research Assistant (2020-2021) under the supervision of Professor James Jianqiao Yu. All my mentors have provided invaluable guidance and support throughout my academic journey.
 
 <hr class="divider" />
 
-My research interests lie at the intersection of computer science, economics, and sociology, focusing on fairness in AI- and human-involved systems—including data markets, federated learning, and human–AI collaboration. I investigate fairness-related issues arising from human factors such as heterogeneous data resources, behaviors, cognitive capacities, and demographic characteristics. My academic goal is to empower AI systems to be trustworthy, efficient, and fair in practice. Please refer to my research statement details [here]({{site.url}}/assets/pdf/Jiashi_GAO_Research_statement.pdf). 
+My research interests lie at the intersection of computer science, economics, and sociology, with a focus on trustworthiness in AI- and human-involved systems—including data markets, federated learning, human-AI collaboration, and recommender systems. I investigate issues such as unfairness, stereotypes, and bias that arise from human factors, including heterogeneous data resources, behavioral differences, cognitive capacities, and demographic characteristics. My academic goal is to empower AI systems to be trustworthy, efficient, and fair in real-world practice.
 
-<hr class="divider" />
-I expect to graduate in July 2025 and am currently seeking postdoctoral positions to continue my research. You can find my CV [here]({{site.url}}/assets/pdf/Jiashi_GAO_CV.pdf).
-
-
-<hr class="divider" />
-<!-- PDF Viewer Section -->
-<div id="pdf-viewer-container">
-    <button class="pdf-nav-btn" id="prev" onclick="goToPreviousPage()">Prev</button>
-    <canvas id="pdf-canvas"></canvas>
-    <button class="pdf-nav-btn" id="next" onclick="goToNextPage()">Next</button>
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
-<script>
-  const url = '{{site.url}}/assets/pdf/rs.pdf';  // Replace with your PDF file's URL
-  let currentPage = 1;
-  let pdfDoc = null;
-
-  const canvas = document.getElementById('pdf-canvas');
-  const ctx = canvas.getContext('2d');
-
-  // Load PDF
-  function renderPage(pageNum) {
-    pdfDoc.getPage(pageNum).then(function(page) {
-      const viewport = page.getViewport({ scale: 1 });
-      canvas.height = viewport.height;
-      canvas.width = viewport.width;
-
-      page.render({ canvasContext: ctx, viewport: viewport });
-    });
-  }
-
-  function loadPDF() {
-    pdfjsLib.getDocument(url).promise.then(function(pdf) {
-      pdfDoc = pdf;
-      renderPage(currentPage);
-    });
-  }
-
-  function goToNextPage() {
-    if (currentPage < pdfDoc.numPages) {
-      currentPage++;
-      renderPage(currentPage);
-    }
-  }
-
-  function goToPreviousPage() {
-    if (currentPage > 1) {
-      currentPage--;
-      renderPage(currentPage);
-    }
-  }
-
-  loadPDF();
-</script>
 
 <style>
   #pdf-viewer-container {
