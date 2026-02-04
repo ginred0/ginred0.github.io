@@ -24,11 +24,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently a postdoc in the Department of Computer Science at Hong Kong Baptist University in Hong Kong, under the supervision of Prof. <a href="https://www.comp.hkbu.edu.hk/~lichen/">Li Chen</a>. Prior to this, I obtained my Ph.D. from the Department of Computational Science and Engineering at Southern University of Science and Technology  (2021-2025), where I was supervised by Prof. <a href="https://cse.sustech.edu.cn/faculty/~weixt/">Xuetao Wei</a>. Before beginning my doctoral studies, I worked as a Research Assistant (2020-2021) under the supervision of Prof. <a href="https://jqyu.me/en/index.html">James Jianqiao Yu</a>. All my mentors have provided invaluable guidance and support throughout my academic journey.
+I am currently a postdoc in the Department of Computer Science at Hong Kong Baptist University, under the supervision of Prof. <a href="https://www.comp.hkbu.edu.hk/~lichen/">Li Chen</a>. Prior to this, I obtained my Ph.D. from the Department of Computer Science and Engineering at Southern University of Science and Technology  (2021-2025), where I was supervised by Prof. <a href="https://cse.sustech.edu.cn/faculty/~weixt/">Xuetao Wei</a>. Before beginning my doctoral studies, I worked as a Research Assistant (2020-2021) under the supervision of Prof. <a href="https://jqyu.me/en/index.html">James Jianqiao Yu</a>. All my mentors have provided invaluable guidance and support throughout my academic journey.
 
 <hr class="divider" />
 
-My research interests lie at the intersection of computer science, economics, and sociology, with a focus on trustworthiness in AI- and human-involved systems—including data markets, federated learning, human-AI collaboration, and recommender systems. I investigate issues such as unfairness, stereotypes, and bias that arise from human factors, including heterogeneous data resources, behavioral differences, cognitive capacities, and demographic characteristics. My academic goal is to empower AI systems to be trustworthy, efficient, and fair in real-world practice.
+My research interests lie at the intersection of computer science, economics, and sociology, with a focus on trustworthiness in AI- and human-involved systems—including data markets, federated learning, human-AI collaboration, and recommender systems. I investigate issues such as unfairness, stereotypes, and bias that arise from human factors, including heterogeneous data resources, human behavior, cognitive capacities, and demographic characteristics. My academic goal is to empower AI systems to be trustworthy, efficient, and fair in real-world practice.
 
 
 <style>
