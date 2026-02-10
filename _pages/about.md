@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: SUSTech, Shenzhen, China
+subtitle: Shenzhen, China
 
 profile:
   align: right
